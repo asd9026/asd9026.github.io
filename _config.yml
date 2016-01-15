@@ -17,4 +17,4 @@ url: "asd9026.github.io" # the base hostname & protocol for your site
 github_username:  http://github.com/asd9026
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
