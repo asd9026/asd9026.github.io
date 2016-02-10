@@ -21,6 +21,7 @@ ex) ```.stream()```을 ```.parallelStream()```으로 변경하면 내부적으�
 
 다음은 Stream 적용 유무에 따른 예제이다.
 - JAVA7 이하에서의 처리 방법
+
 ```
 List groceryTransactions = new ArrayList();
 for (Transaction t : groceryTransactions) {
@@ -41,6 +42,7 @@ for (Transaction t : groceryTransactions) {
 ``` 
 
 - JAVA8에서의 stream을 적용한 처리 방법
+
 ```
 List transactionsIds = 
     transactions.stream()
