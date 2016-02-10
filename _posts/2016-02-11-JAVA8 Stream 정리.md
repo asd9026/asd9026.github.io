@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JAVA8 Stream 정리"
-date:   2016-02-11 01:00:00 +0530
+date:   2016-02-11 01:40:00 +0530
 categories: jekyll update
 ---
 
@@ -21,7 +21,7 @@ ex) ```.stream()```을 ```.parallelStream()```으로 변경하면 내부적으�
 
 다음은 Stream 적용 유무에 따른 예제이다.
 - JAVA7 이하에서의 처리 방법
-{% java %}
+{% highlight java %} 
 List groceryTransactions = new ArrayList();
 for (Transaction t : groceryTransactions) {
     if (t.getType() == Transaction.GROCERY) {
@@ -38,17 +38,17 @@ List transactionIds = new ArrayList();
 for (Transaction t : groceryTransactions) {
     transactionIds.add(t.getId());
 }
-{%%}
+{% endhighlight %} 
 
 - JAVA8에서의 stream을 적용한 처리 방법
-{%%}
+{% highlight java %} 
 List transactionsIds = 
     transactions.stream()
         .filter(t -> t.getType() == Transaction.GROCERY)
         .sorted(Comparator.comparing(Transaction::getValue).reversed())
         .map(Transaction::getId)
         .collect(Collectors.toList());
-{%%}
+{% endhighlight %} 
 
 <br>
 
