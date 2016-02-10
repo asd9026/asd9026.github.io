@@ -87,4 +87,4 @@ cf) 람다 표현식(t -> t.getType())과 메소드 참조(Transaction::getValue
 <br>
 [자바8 스트림 API 소개 slideshare](http://www.slideshare.net/madvirus/8-api)
 <br>
-JAVA 8 DOCS API [home](https://docs.oracle.com/javase/8/docs/api/) [stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
+JAVA 8 DOCS API [home](https://docs.oracle.com/javase/8/docs/api/) /  [stream](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
