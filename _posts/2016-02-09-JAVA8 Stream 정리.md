@@ -18,6 +18,7 @@ ex)
 | SELECT AVG(속성) FROM 테이블 | 컬렉션.stream().map( x -> x.getInt() ).average(); |
 
 - 처리해야할 컬렉션이 매우 큰 사이즈인 경우 속도 향상을 위한 병렬처리를 쉽게 구현할 수 있다.
+<br>
 ex) ```.stream()```을 ```.parallelStream()```으로 변경하면 내부적으로 멀티코어로 동작
 
 <br>
