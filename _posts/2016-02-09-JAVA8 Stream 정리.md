@@ -24,6 +24,7 @@ ex) ```.stream()```을 ```.parallelStream()```으로 변경하면 내부적으�
 <br>
 
 다음은 Stream 적용 유무에 따른 예제이다.
+
 - JAVA7 이하에서의 처리 방법
 
 ```
@@ -63,20 +64,20 @@ stream을 적용함으로써 코드가 간편화 되어 가독성 또한 높아�
 <br>
 
 하지만 위의 코드를 하나씩 뜯어 보면 더욱 이해하기 쉽다는 것을 금방 알 수 있게 된다.
+
 - stream() 메소드: List의 아이템을 Stream으로 가져오는 역활
 - filter() 메소드: 주어진 조건(predicate)을 충족하는 아이템을 가져오는 역활
 - sorted() 메소드: 주어진 comparator에 맞게 정렬
 - map() 메소드: 아이템에서 원하는 정보를 추출
 - collect() 메소드: 컬렉션으로 반환
+ 
 여기서 collect() 메소드를 제외한 다른 메소드들은 stream을 반환하기 때문에 이들을 서로 연결하여 파이프라인형태로 처리할 수 있었다.
 
-<br>
 <br>
 
 cf) 람다 표현식(t -> t.getType())과 메소드 참조(Transaction::getValue)의 의미는 간단하다.
 
 <br>
-
 람다 표현식의 경우 t는 임의의 변수로 x, z, k... 등 어떠한 것이든 사용해도 된다. 이러한 임의의 변수는 stream으로 가져온 컬렉션에서 각각의 아이템들을 의미하며, ```->```는 아이템 t의 어떠한 정보를 사용할 지를 나타낸다.
 즉, ```t -> t.getType()```는 컬렉션 내의 모든 아이템들의 .getType()를 각각 가져온다.
 
@@ -88,8 +89,10 @@ cf) 람다 표현식(t -> t.getType())과 메소드 참조(Transaction::getValue
 <br>
 
 동작과정을 그림으로 보면 아래와 같다.
+<br>
 - 간략도
 ![image](https://cloud.githubusercontent.com/assets/16336685/12953245/dfe81748-d05c-11e5-853a-6507fb1c335e.png)
+<br>
 - 상세도
 ![image](https://cloud.githubusercontent.com/assets/16336685/12953260/f4ff0402-d05c-11e5-9041-1cd8a9743d95.png)
 
