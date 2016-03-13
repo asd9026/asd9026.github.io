@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JAVA8 Stream 정리"
-date:   2016-02-09 01:40:00 +0530
+date:   2016-02-08 06:00:00 -0800
 categories: jekyll update
 ---
 
